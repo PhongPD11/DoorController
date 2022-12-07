@@ -1,0 +1,164 @@
+<div class="page-wrapper">
+    <div class="content container-fluid">
+        <div class="page-header">
+            <div class="row">
+                <div class="col-sm-12 mt-5">
+                    <h3 class="page-title mt-3">WIFI</h3>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item active" id="status-connect-hw">
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-4 col-sm-12 col-12">
+                <div class="row">
+                    <div class="col-xl-12 col-sm-8 col-12">
+                        <div class="card board1 fill" style="cursor: pointer; -webkit-text-fill-color: #1f2ad5">
+                            <a data-toggle="modal" href="#modal_add_wifi">
+                                <div class="card-body">
+                                    <div class="dash-widget-header">
+                                        <div>
+                                            <h3 class="card_widget_header"></h3>
+                                            <h6 class="text-muted">Thêm WIFI</h6>
+                                        </div>
+                                        <div class="ml-auto mt-md-3 mt-lg-0"> <span class="opacity-7 text-muted">
+                                                <i class="fa-solid fa-plus" style="font-size: 24px; " width="24"
+                                                    height="24" viewbox="0 0 24 24" fill="none" stroke="#009688"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                </i>
+                                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6">
+                                                </path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12 col-sm-8 col-12">
+                        <div class="card board1 fill" style="cursor: pointer; -webkit-text-fill-color: #f07700">
+
+                            <div class="card-body" id="btn-change-wifi">
+                                <div class="dash-widget-header">
+                                    <div>
+                                        <h3 class="card_widget_header"></h3>
+                                        <h6 class="text-muted">Chuyển đổi WIFI</h6>
+                                    </div>
+                                    <div class="ml-auto mt-md-3 mt-lg-0"> <span class="opacity-7 text-muted">
+                                            <i class="fa-solid fa-retweet" style="font-size: 24px; " width="24"
+                                                height="24" viewbox="0 0 24 24" fill="none" stroke="#009688"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            </i>
+                                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6">
+                                            </path>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row"></div>
+
+            </div>
+            <div class="col-xl-6 col-sm-8 col-12">
+                <div class="card board1 fill">
+                    <div class="card-body">
+                        <div class="wifi" id="WIFI1">
+                            <h5 class="wifi-content">WIFI 1 <span class="wifi-status"></span></h5>
+                            <div class="ssid">
+                                <div class="ssid-content">SSID 1 </div>
+                                <div class="ssid-value" id="SSID1"></div>
+                            </div>
+                            <div class="password">
+                                <div class="password-conten">Password </div>
+                                <div class="password-value" id="PASS1">
+                                </div>
+                                <span class="show-password">
+                                    <i class="fa-solid fa-eye-slash"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="wifi" id="WIFI2">
+                            <h5 class="wifi-content">WIFI 2 <div class="wifi-status"></div>
+                            </h5>
+                            <div class="ssid">
+                                <div class="ssid-content">SSID 2 </div>
+                                <div class="ssid-value" id="SSID2"></div>
+                            </div>
+                            <div class="password">
+                                <div class="password-conten">Password </div>
+                                <div class="password-value" id="PASS2">
+
+                                </div>
+                                <span class="show-password">
+                                    <i class="fa-solid fa-eye-slash"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal_add_wifi" aria-hidden="true" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Thêm WIFI</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span
+                                aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="form-add-wifi">
+                            <div class="row form-row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <select class="form-select form-select-lg p-2">
+                                            <option value="WIFI1" selected>WIFI 1</option>
+                                            <option value="WIFI2">WIFI 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="form-label">SSID</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="form-label">Password</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <button type="submit" class="btn btn-block"
+                                style="background-color: #1f2ad5; color: #fff">Cập nhật</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
